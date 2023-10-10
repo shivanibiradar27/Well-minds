@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Request an Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2c5844bd;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>Request an Appointment</h1>
+
+  <form>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="therapy">Select Therapy</label>
+    <select id="therapy" name="therapy" required>
+      <option value="">-- Select Therapy --</option>
+      <option value="individual">Individual Therapy</option>
+      <option value="couples">Couples Therapy</option>
+      <option value="family">Family Therapy</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time" required>
+
+  </form>
+  <form action="app1.html">
+    <input type="submit" value="Request Appointment">
+  </form>
+</body>
+</html>
